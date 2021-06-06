@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Trang Chu</title>
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h2>Tạo mới khóa học</h2>
+        <form id="courseForm" class="was-validated">
+            <div class="form-group">
+                <label for="name">Tên Khóa Học:</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên khóa học" name="name" required>
+                <div class="valid-feedback">OK</div>
+                <div class="invalid-feedback">Nhập tên khóa học</div>
+            </div>
+            <div class="form-group">
+                <label for="price">Giá:</label>
+                <input type="number" class="form-control" id="price" placeholder="Nhập giá khóa học" name="price" required>
+                <div class="valid-feedback">OK</div>
+                <div class="invalid-feedback">Nhập giá khóa học.</div>
+            </div>
+            <div class="form-group">
+                <input type="text" hidden id="idCourse">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnCreate">Thêm mới</button>
+            <input type="button" value="Cập nhật" id="updateBtn" class="btn btn-success" disabled="true">
+        </form>
+        <hr>
+        <div class="product">
+            <h2>Danh sách khóa học</h2>
+            <button class="btn btn-info" id="getCourse"> Lấy danh sách khóa học</button>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Số thứ tự</th>
+                        <th>Tên khóa học</th>
+                        <th>Giá</th>
+                        <th>Tùy chọn</th>
+                        <th style="visibility: hidden;width:20px"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="/jquery_321/jquery-3.2.1.js"></script>
+<script src="/js/ajax.js"></script>
+
+</html>
